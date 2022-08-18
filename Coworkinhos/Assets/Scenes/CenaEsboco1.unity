@@ -1139,6 +1139,7 @@ GameObject:
   - component: {fileID: 485788569}
   - component: {fileID: 485788567}
   - component: {fileID: 485788568}
+  - component: {fileID: 485788572}
   m_Layer: 0
   m_Name: Boneco2
   m_TagString: Player
@@ -1174,8 +1175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff2903053e52ac94dbc398aabbc559db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 300
-  forcaPulo: 15
+  Velocidade: 4
+  forcaPulo: 4
   pulando: 0
   pulouDuasVezes: 0
 --- !u!50 &485788569
@@ -1264,6 +1265,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &485788572
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485788566}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4ae7bf1a62cf3ba419ed0aae04a9d716, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &775806201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,6 +1380,7 @@ GameObject:
   - component: {fileID: 1126940134}
   - component: {fileID: 1126940135}
   - component: {fileID: 1126940139}
+  - component: {fileID: 1126940138}
   m_Layer: 0
   m_Name: Boneco1
   m_TagString: Player
@@ -1469,6 +1490,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1126940138
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126940133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e22a0823616e66747949605a638cf833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1126940139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,8 +1521,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71175d77111e512409d19c177fcb7208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 300
-  forcaPulo: 15
+  Velocidade: 4
+  forcaPulo: 4
   pulando: 0
   pulouDuasVezes: 0
 --- !u!1 &1375236719
