@@ -21,7 +21,7 @@ public class Jogador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movimento();
+        //Movimento();
         Pulo();
     }
 
