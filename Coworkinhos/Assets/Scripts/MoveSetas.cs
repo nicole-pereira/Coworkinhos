@@ -4,83 +4,79 @@ using UnityEngine;
 
 public class MoveSetas : MonoBehaviour
 {
-    public float Speed;
-
-    float MovimentoX;
-    float MovimentoY;
-
-    Rigidbody2D rb;
-
+    public float Velocidade;
     public float forcaPulo;
+
+    private Rigidbody2D rigidbody;
+    private Animator ani;
+
     public bool pulando;
     public bool pulouDuasVezes;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        MovimentoX = 0;
-        MovimentoY = 0;
+        rigidbody = GetComponent<Rigidbody2D>();
+        ani = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector2(MovimentoX * Speed * Time.deltaTime, MovimentoY * Speed * Time.deltaTime);   
-
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
-            {
-                if(!pulando)
-                {
-                    rb.AddForce(new Vector2(0f,forcaPulo),ForceMode2D.Impulse);
-                    pulouDuasVezes = true;
-                }
-                else
-                {
-                    if(pulouDuasVezes)
-                    {
-                        rb.AddForce(new Vector2(0f,forcaPulo*0.9f),ForceMode2D.Impulse);
-                        pulouDuasVezes = false;
-                    }
-                }
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            MovimentoX = -1;
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            MovimentoX = -1;
-        }
-
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            MovimentoX = 1;
-        }
-
-        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.DownArrow))
-        {
-            MovimentoY = 0;
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            MovimentoX = 0;
-        }
-
+        Movimento();
+        Pulo();
     }
 
-     void OnCollisionEnter2D(Collision2D colisao)
+    void Movimento()
+    {
+        Vector3 movimento = new Vector3(Input.GetAxis("Horizontal2"),0f,0f);
+        transform.position += movimento * Time.deltaTime * Velocidade;
+        if(Input.GetAxis("Horizontal2") >0f)
+        {
+            ani.SetBool("Andando",true);
+            transform.eulerAngles = new Vector3(0f,0f,0f);
+        }
+        if(Input.GetAxis("Horizontal2") <0f)
+        {
+            ani.SetBool("Andando",true);
+            transform.eulerAngles = new Vector3(0f,180f,0f);
+        }
+        if(Input.GetAxis("Horizontal2") ==0f)
+        {
+            ani.SetBool("Andando",false);
+        }
+    }
+    void Pulo()
+    {
+        if(Input.GetButtonDown("Jump2"))
+        {
+            if(!pulando)
+            {
+                rigidbody.velocity = new Vector2(rigidbody.velocity.x,forcaPulo);
+                pulouDuasVezes = true;
+                ani.SetBool("Pulando",true);
+            }
+            else
+            {
+                if(pulouDuasVezes)
+                {
+                    rigidbody.velocity = new Vector2(rigidbody.velocity.x,forcaPulo*0.8f);
+                    pulouDuasVezes = false;
+                    ani.SetBool("Pulando",true);
+                }
+            }
+            
+        }
+        
+    }
+
+    void OnCollisionEnter2D(Collision2D colisao)
     {
 
         if(colisao.gameObject.layer==6)
         {
             pulando = false;
+            ani.SetBool("Pulando",false);
         }
     }
      void OnCollisionExit2D(Collision2D colisao)
@@ -90,5 +86,4 @@ public class MoveSetas : MonoBehaviour
             pulando=true;
         }
     }
-
 }
