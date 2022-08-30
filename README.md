@@ -1,2 +1,2 @@
 # Coworkinhos
-Projeto para a cadeira de metodologias ágeis.
+Projeot para a cadeira de metodologias ágeis.
