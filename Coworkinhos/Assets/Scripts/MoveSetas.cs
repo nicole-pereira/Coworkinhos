@@ -70,18 +70,23 @@ public class MoveSetas : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D colisao)
+        void OnCollisionEnter2D(Collision2D colisao)
     {
 
-        if(colisao.gameObject.layer==6)
+        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==8)
         {
             pulando = false;
             ani.SetBool("Pulando",false);
         }
+
+         if(colisao.gameObject.layer==7)
+        {
+            //morre
+        }
     }
      void OnCollisionExit2D(Collision2D colisao)
     {
-        if(colisao.gameObject.layer==6)
+        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==8)
         {
             pulando=true;
         }
