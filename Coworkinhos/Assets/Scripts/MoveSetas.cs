@@ -79,9 +79,10 @@ public class MoveSetas : MonoBehaviour
             ani.SetBool("Pulando",false);
         }
 
-         if(colisao.gameObject.layer==7)
+         if(colisao.gameObject.layer == 7)
         {
-            //morre
+            GameController.instance.ShowGameOver();
+            Destroy(gameObject);
         }
     }
      void OnCollisionExit2D(Collision2D colisao)

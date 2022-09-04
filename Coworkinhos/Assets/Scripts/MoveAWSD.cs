@@ -79,9 +79,10 @@ public class MoveAWSD : MonoBehaviour
             ani.SetBool("Pulando",false);
         }
 
-        if(colisao.gameObject.layer==8)
+        if(colisao.gameObject.layer== 8)
         {
-            //morre
+            GameController.instance.ShowGameOver();
+            Destroy(gameObject);
         }
     }
      void OnCollisionExit2D(Collision2D colisao)
