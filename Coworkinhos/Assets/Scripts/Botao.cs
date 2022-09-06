@@ -32,7 +32,7 @@ public class Botao : MonoBehaviour
     void OnCollisionEnter2D(Collision2D colisao)
     {
 
-        if(colisao.gameObject.tag == "Player")
+        if(colisao.gameObject.tag == "Player1" || colisao.gameObject.tag == "Player2")
         {
             pisou =true;
             //Debug.Log("pisou botao");
@@ -41,7 +41,7 @@ public class Botao : MonoBehaviour
     void OnCollisionExit2D(Collision2D colisao)
     {
 
-        if(colisao.gameObject.tag == "Player")
+        if(colisao.gameObject.tag == "Player1" || colisao.gameObject.tag == "Player2")
         {
             pisou =false;
             //Debug.Log("pisou botao");

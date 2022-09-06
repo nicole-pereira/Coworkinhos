@@ -73,7 +73,7 @@ public class MoveSetas : MonoBehaviour
         void OnCollisionEnter2D(Collision2D colisao)
     {
 
-        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==8)
+        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==8 || colisao.gameObject.tag=="Player1")
         {
             pulando = false;
             ani.SetBool("Pulando",false);
@@ -87,7 +87,7 @@ public class MoveSetas : MonoBehaviour
     }
      void OnCollisionExit2D(Collision2D colisao)
     {
-        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==8)
+        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==8 || colisao.gameObject.tag=="Player1")
         {
             pulando=true;
         }

@@ -73,7 +73,7 @@ public class MoveAWSD : MonoBehaviour
     void OnCollisionEnter2D(Collision2D colisao)
     {
 
-        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==7)
+        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==7 || colisao.gameObject.tag=="Player2")
         {
             pulando = false;
             ani.SetBool("Pulando",false);
@@ -87,7 +87,7 @@ public class MoveAWSD : MonoBehaviour
     }
      void OnCollisionExit2D(Collision2D colisao)
     {
-        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==7)
+        if(colisao.gameObject.layer==6 || colisao.gameObject.layer==7 || colisao.gameObject.tag=="Player2")
         {
             pulando=true;
         }
