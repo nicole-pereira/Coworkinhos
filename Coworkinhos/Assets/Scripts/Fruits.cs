@@ -8,6 +8,9 @@ public class Fruits : MonoBehaviour
     private CapsuleCollider2D capsula;
     private CircleCollider2D circulo;
 
+    public GameObject melanciaQuestion;
+    public GameObject laranjaQuestion;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +34,11 @@ public class Fruits : MonoBehaviour
                 Debug.Log("passar reto");
             }
             else{
+                Time.timeScale = 0;
+                laranjaQuestion.SetActive(true);
+                Destroy(laranjaQuestion, 5f);
                 Destroy(gameObject);
             }
-           // circulo.enabled = false;
-            //collected.SetActive(true);
         }
            
 
@@ -44,11 +48,11 @@ public class Fruits : MonoBehaviour
                 Debug.Log("passar reto");
             }
             else{
+                Time.timeScale = 0;
+                melanciaQuestion.SetActive(true);
+                Destroy(melanciaQuestion, 5f);
                 Destroy(gameObject);
             }
-           // capsula.enabled = false;
-            //collected.SetActive(true);
-            
         }
     }
 }
