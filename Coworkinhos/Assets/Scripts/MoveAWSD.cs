@@ -92,4 +92,8 @@ public class MoveAWSD : MonoBehaviour
             pulando=true;
         }
     }
+    void OnDestroy()
+    {
+        Debug.Log("morreu");
+    }
 }

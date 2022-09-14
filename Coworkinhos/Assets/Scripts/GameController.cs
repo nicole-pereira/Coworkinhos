@@ -12,6 +12,12 @@ public class GameController : MonoBehaviour
     public GameObject pause;
 
     bool isPause;
+
+    public float incremento;
+
+    public GameObject jogador;
+
+    public bool acertou;
     
     // Start is called before the first frame update
     void Start()
@@ -49,12 +55,16 @@ public class GameController : MonoBehaviour
     public void Errou(GameObject fruta)
     {
         Destroy(fruta);
+        acertou=false;
+        Debug.Log("errou a pergunta");
         Time.timeScale = 1;
     }
 
     public void Acertou(GameObject fruta)
     {
         Destroy(fruta);
+        acertou=true;
+        Debug.Log("acertou a pergunta");
         Time.timeScale = 1;
     }
 

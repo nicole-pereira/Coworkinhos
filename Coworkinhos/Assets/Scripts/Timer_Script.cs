@@ -21,6 +21,11 @@ public class Timer_Script : MonoBehaviour
     {
         tempo = tempo-Time.deltaTime;
         timeTxt.text = tempo.ToString("F0");
+        Perder();
+        
+    }
+    void Perder()
+    {
         if(tempo <=0)
         {
             GameController.instance.ShowGameOver();
