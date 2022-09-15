@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -10,7 +11,6 @@ public class GameController : MonoBehaviour
     public GameObject gameOver;
 
     public GameObject pause;
-
     bool isPause;
 
     public float incremento;
@@ -19,9 +19,13 @@ public class GameController : MonoBehaviour
 
     public bool acertou;
     
+    public int totalScore;
+    public Text scoreText;
+
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         instance = this;
     }
 
@@ -48,8 +52,8 @@ public class GameController : MonoBehaviour
 
     public void RestartGame(string lvlName)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(lvlName);
         Time.timeScale = 1;
+        UnityEngine.SceneManagement.SceneManager.LoadScene(lvlName);
     }
 
     public void Errou(GameObject fruta)
@@ -66,6 +70,8 @@ public class GameController : MonoBehaviour
         acertou=true;
         Debug.Log("acertou a pergunta");
         Time.timeScale = 1;
+        totalScore += Fruits.instance.Score;
+        scoreText.text = totalScore.ToString();
     }
 
     public void Pause()
