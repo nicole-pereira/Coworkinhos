@@ -38,7 +38,6 @@ public class Fruits : MonoBehaviour
             else{
                 Time.timeScale = 0;
                 laranjaQuestion.SetActive(true);
-                Destroy(laranjaQuestion, 5f);
                 Destroy(gameObject);
             }
         }
@@ -52,7 +51,6 @@ public class Fruits : MonoBehaviour
             else{
                 Time.timeScale = 0;
                 melanciaQuestion.SetActive(true);
-                Destroy(melanciaQuestion, 5f);
                 Destroy(gameObject);
             }
         }

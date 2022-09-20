@@ -9,9 +9,10 @@ public class GameController : MonoBehaviour
     public static GameController instance;
 
     public GameObject gameOver;
+    public GameObject feedback;
 
     public GameObject pause;
-    bool isPause;
+    public bool isPause;
 
     public float incremento;
 
@@ -58,17 +59,24 @@ public class GameController : MonoBehaviour
 
     public void Errou(GameObject fruta)
     {
-        Destroy(fruta);
         acertou=false;
         Debug.Log("errou a pergunta");
         Time.timeScale = 1;
+        Destroy(fruta, 3f);
+        Debug.Log("errou");
+    }
+
+    public void Retorno(GameObject feedback)
+    {
+        feedback.SetActive(true);
+        Destroy(feedback, 3f);
     }
 
     public void Acertou(GameObject fruta)
     {
-        Destroy(fruta);
         acertou=true;
         Debug.Log("acertou a pergunta");
+        Destroy(fruta, 0.1f);
         Time.timeScale = 1;
         totalScore += Fruits.instance.Score;
         scoreText.text = totalScore.ToString();

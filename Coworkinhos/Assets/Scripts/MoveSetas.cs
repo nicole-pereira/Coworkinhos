@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveSetas : MonoBehaviour
 {
-    public float Velocidade;
+    public float velocidade;
     public float forcaPulo;
 
     private Rigidbody2D rigidbody;
@@ -23,6 +23,10 @@ public class MoveSetas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(velocidade <= 0.0f)
+        {
+            velocidade = 0.5f;
+        }
         Movimento();
         Pulo();
     }
@@ -30,7 +34,7 @@ public class MoveSetas : MonoBehaviour
     void Movimento()
     {
         Vector3 movimento = new Vector3(Input.GetAxis("Horizontal2"),0f,0f);
-        transform.position += movimento * Time.deltaTime * Velocidade;
+        transform.position += movimento * Time.deltaTime * velocidade;
         if(Input.GetAxis("Horizontal2") >0f)
         {
             ani.SetBool("Andando",true);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Onus_Bonus : MonoBehaviour
 {
 
-     public GameObject gc;
+    public GameObject gc;
 
     public GameObject jogador;
 
@@ -27,10 +27,10 @@ public class Onus_Bonus : MonoBehaviour
         {
             Debug.Log("acertou");
             if(jogador.tag=="Player1"){
-                jogador.GetComponent<MoveAWSD>().Velocidade+=incremento;
+                jogador.GetComponent<MoveAWSD>().velocidade+=incremento;
             }
             else if(jogador.tag=="Player2"){
-                jogador.GetComponent<MoveSetas>().Velocidade+=incremento;
+                jogador.GetComponent<MoveSetas>().velocidade+=incremento;
             }
             
         }
@@ -38,10 +38,10 @@ public class Onus_Bonus : MonoBehaviour
         {
             Debug.Log("errou");
             if(jogador.tag=="Player1"){
-                jogador.GetComponent<MoveAWSD>().Velocidade-=incremento;
+                jogador.GetComponent<MoveAWSD>().velocidade-=incremento;
             }
             else if(jogador.tag=="Player2"){
-                jogador.GetComponent<MoveSetas>().Velocidade-=incremento;
+                jogador.GetComponent<MoveSetas>().velocidade-=incremento;
             }
         }
     }
