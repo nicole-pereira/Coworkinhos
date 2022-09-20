@@ -13,6 +13,13 @@ public class MoveSetas : MonoBehaviour
     public bool pulando;
     public bool pulouDuasVezes;
 
+    public Transform porta1;
+    public Transform porta2;
+    public Transform perso1;
+    public Transform perso2;
+
+    public string lvl;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +36,7 @@ public class MoveSetas : MonoBehaviour
         }
         Movimento();
         Pulo();
+        InteractPorta();
     }
 
     void Movimento()
@@ -94,6 +102,14 @@ public class MoveSetas : MonoBehaviour
         if(colisao.gameObject.layer==6 || colisao.gameObject.layer==8 || colisao.gameObject.tag=="Player1")
         {
             pulando=true;
+        }
+    }
+
+    void InteractPorta ()
+    {
+        if (Input.GetKeyDown(KeyCode.DownArrow) && Vector3.Distance(perso1.position,porta1.position)<1 && Vector3.Distance(perso2.position,porta2.position)<1 )
+        {
+            GameController.instance.RestartGame(lvl);
         }
     }
 }

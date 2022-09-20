@@ -13,6 +13,12 @@ public class MoveAWSD : MonoBehaviour
     public bool pulando;
     public bool pulouDuasVezes;
 
+    public Transform porta1;
+    public Transform porta2;
+    public Transform perso1;
+    public Transform perso2;
+
+    public string lvl;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +35,7 @@ public class MoveAWSD : MonoBehaviour
         }
         Movimento();
         Pulo();
+        InteractPorta();
     }
 
     void Movimento()
@@ -99,5 +106,13 @@ public class MoveAWSD : MonoBehaviour
     void OnDestroy()
     {
         Debug.Log("morreu");
+    }
+
+    void InteractPorta ()
+    {
+        if (Input.GetKeyDown("s") && Vector3.Distance(perso1.position,porta1.position)<1 && Vector3.Distance(perso2.position,porta2.position)<1 )
+        {
+            GameController.instance.RestartGame(lvl);
+        }
     }
 }
