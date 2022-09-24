@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveSetas : MonoBehaviour
 {
-    public float Velocidade;
+    public float velocidade;
     public float forcaPulo;
 
     private Rigidbody2D rigidbody;
@@ -12,6 +12,13 @@ public class MoveSetas : MonoBehaviour
 
     public bool pulando;
     public bool pulouDuasVezes;
+
+    public Transform porta1;
+    public Transform porta2;
+    public Transform perso1;
+    public Transform perso2;
+
+    public string lvl;
 
     // Start is called before the first frame update
     void Start()
@@ -23,14 +30,19 @@ public class MoveSetas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(velocidade <= 0.0f)
+        {
+            velocidade = 0.5f;
+        }
         Movimento();
         Pulo();
+        InteractPorta();
     }
 
     void Movimento()
     {
         Vector3 movimento = new Vector3(Input.GetAxis("Horizontal2"),0f,0f);
-        transform.position += movimento * Time.deltaTime * Velocidade;
+        transform.position += movimento * Time.deltaTime * velocidade;
         if(Input.GetAxis("Horizontal2") >0f)
         {
             ani.SetBool("Andando",true);
@@ -90,6 +102,14 @@ public class MoveSetas : MonoBehaviour
         if(colisao.gameObject.layer==6 || colisao.gameObject.layer==8 || colisao.gameObject.tag=="Player1")
         {
             pulando=true;
+        }
+    }
+
+    void InteractPorta ()
+    {
+        if (Input.GetKeyDown(KeyCode.DownArrow) && Vector3.Distance(perso1.position,porta1.position)<1 && Vector3.Distance(perso2.position,porta2.position)<1 )
+        {
+            GameController.instance.RestartGame(lvl);
         }
     }
 }

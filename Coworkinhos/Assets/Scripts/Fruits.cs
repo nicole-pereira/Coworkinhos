@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fruits : MonoBehaviour
 {
+    public static Fruits instance;
 
     private CapsuleCollider2D capsula;
     private CircleCollider2D circulo;
@@ -11,13 +12,14 @@ public class Fruits : MonoBehaviour
     public GameObject melanciaQuestion;
     public GameObject laranjaQuestion;
 
+    public int Score;
 
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         capsula = GetComponent<CapsuleCollider2D>();
         circulo = GetComponent<CircleCollider2D>();
-        //objeto = GetComponent<GameObject>();
     }
 
     // Update is called once per frame
@@ -36,7 +38,6 @@ public class Fruits : MonoBehaviour
             else{
                 Time.timeScale = 0;
                 laranjaQuestion.SetActive(true);
-                Destroy(laranjaQuestion, 5f);
                 Destroy(gameObject);
             }
         }
@@ -50,7 +51,6 @@ public class Fruits : MonoBehaviour
             else{
                 Time.timeScale = 0;
                 melanciaQuestion.SetActive(true);
-                Destroy(melanciaQuestion, 5f);
                 Destroy(gameObject);
             }
         }

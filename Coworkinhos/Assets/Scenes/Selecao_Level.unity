@@ -596,6 +596,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: {fileID: 0}
+  feedback: {fileID: 0}
+  pause: {fileID: 0}
+  isPause: 0
+  incremento: 0
+  jogador: {fileID: 0}
+  acertou: 0
+  totalScore: 0
+  scoreText: {fileID: 0}
 --- !u!4 &411388328
 Transform:
   m_ObjectHideFlags: 0
@@ -1138,7 +1146,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 707003807}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 411388327}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level 4
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &707003807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,7 +2730,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1710447182}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 411388327}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level 3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1710447182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3337,7 +3369,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1997577105}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 411388327}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: RestartGame
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level 2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1997577105
 MonoBehaviour:
   m_ObjectHideFlags: 0
