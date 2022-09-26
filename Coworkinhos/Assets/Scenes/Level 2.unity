@@ -2596,6 +2596,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399401335}
   m_CullTransparentMesh: 1
+--- !u!1 &399851200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 399851202}
+  - component: {fileID: 399851201}
+  m_Layer: 0
+  m_Name: SetadorLVL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &399851201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399851200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b2ff0aeac7a2a4c8f56bdb37ccaf36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  porximaCena: 0
+--- !u!4 &399851202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399851200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5921196, y: 2.0383136, z: 180.0142}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &416750544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,10 +2915,12 @@ MonoBehaviour:
   forcaPulo: 4
   pulando: 0
   pulouDuasVezes: 0
+  dist: 1
   porta1: {fileID: 596683710}
   porta2: {fileID: 705323509}
   perso1: {fileID: 1126940137}
   perso2: {fileID: 485788571}
+  setadorLvl: {fileID: 399851200}
   lvl: Level 3
 --- !u!50 &485788569
 Rigidbody2D:
@@ -2956,7 +3002,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485788566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.91, y: 6.7, z: 0}
+  m_LocalPosition: {x: 0.28, y: -0.55, z: 0}
   m_LocalScale: {x: 2.031817, y: 2.031817, z: 2.031817}
   m_Children: []
   m_Father: {fileID: 1910994717}
@@ -4788,7 +4834,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126940133}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3899999, y: 6.57, z: 0}
+  m_LocalPosition: {x: 1.39, y: -0.66, z: 0}
   m_LocalScale: {x: 2.031817, y: 2.031817, z: 2.031817}
   m_Children: []
   m_Father: {fileID: 1910994717}
@@ -4829,10 +4875,12 @@ MonoBehaviour:
   forcaPulo: 4
   pulando: 0
   pulouDuasVezes: 0
+  dist: 1
   porta1: {fileID: 596683710}
   porta2: {fileID: 705323509}
   perso1: {fileID: 1126940137}
   perso2: {fileID: 485788571}
+  setadorLvl: {fileID: 399851200}
   lvl: Level 3
 --- !u!1 &1132580546
 GameObject:

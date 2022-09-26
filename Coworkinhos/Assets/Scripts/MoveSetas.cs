@@ -13,10 +13,14 @@ public class MoveSetas : MonoBehaviour
     public bool pulando;
     public bool pulouDuasVezes;
 
+    public int dist;
+
     public Transform porta1;
     public Transform porta2;
     public Transform perso1;
     public Transform perso2;
+
+    public GameObject setadorLvl;
 
     public string lvl;
 
@@ -107,8 +111,9 @@ public class MoveSetas : MonoBehaviour
 
     void InteractPorta ()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow) && Vector3.Distance(perso1.position,porta1.position)<1 && Vector3.Distance(perso2.position,porta2.position)<1 )
+        if (Input.GetKeyDown(KeyCode.DownArrow) && Vector3.Distance(perso1.position,porta1.position)<dist && Vector3.Distance(perso2.position,porta2.position)<dist )
         {
+            setadorLvl.GetComponent<SetarLvl>().Setar();
             GameController.instance.RestartGame(lvl);
         }
     }

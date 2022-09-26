@@ -3939,10 +3939,12 @@ MonoBehaviour:
   forcaPulo: 4
   pulando: 0
   pulouDuasVezes: 0
+  dist: 1
   porta1: {fileID: 1050287362}
   porta2: {fileID: 411590020}
   perso1: {fileID: 1126940137}
   perso2: {fileID: 485788571}
+  setadorLvl: {fileID: 953985123}
   lvl: Level 6
 --- !u!50 &485788569
 Rigidbody2D:
@@ -5641,6 +5643,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3693934851900515198, guid: 16b9154b37f4bb542b9f68124fe275d2, type: 3}
   m_PrefabInstance: {fileID: 940179290}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &953985123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953985124}
+  - component: {fileID: 953985125}
+  m_Layer: 0
+  m_Name: SetadorLvl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &953985124
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953985123}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.7309091, y: -1.5787288, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &953985125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953985123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b2ff0aeac7a2a4c8f56bdb37ccaf36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  porximaCena: 0
 --- !u!4 &986864960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3123622334781750268, guid: 1daae0cad8cd206439c245ed6390120a, type: 3}
@@ -6284,10 +6330,12 @@ MonoBehaviour:
   forcaPulo: 4
   pulando: 0
   pulouDuasVezes: 0
+  dist: 1
   porta1: {fileID: 1050287362}
   porta2: {fileID: 411590020}
   perso1: {fileID: 1126940137}
   perso2: {fileID: 485788571}
+  setadorLvl: {fileID: 953985123}
   lvl: Level 6
 --- !u!1 &1132580546
 GameObject:

@@ -13,10 +13,14 @@ public class MoveAWSD : MonoBehaviour
     public bool pulando;
     public bool pulouDuasVezes;
 
+    public int dist;
+
     public Transform porta1;
     public Transform porta2;
     public Transform perso1;
     public Transform perso2;
+
+    public GameObject setadorLvl;
 
     public string lvl;
     // Start is called before the first frame update
@@ -110,8 +114,12 @@ public class MoveAWSD : MonoBehaviour
 
     void InteractPorta ()
     {
-        if (Input.GetKeyDown("s") && Vector3.Distance(perso1.position,porta1.position)<1 && Vector3.Distance(perso2.position,porta2.position)<1 )
+        
+        if (Input.GetKeyDown("s") && Vector3.Distance(perso1.position,porta1.position)<dist && Vector3.Distance(perso2.position,porta2.position)<dist )
         {
+            Debug.Log("passar de nivel");
+            setadorLvl.GetComponent<SetarLvl>().Setar();
+
             GameController.instance.RestartGame(lvl);
         }
     }
