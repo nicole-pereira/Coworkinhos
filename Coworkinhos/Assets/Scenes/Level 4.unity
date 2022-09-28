@@ -2383,7 +2383,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.0000238, y: -43}
+  m_AnchoredPosition: {x: 2.0000238, y: -66}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &339793761
@@ -3151,7 +3151,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.181}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 2}
+  m_AnchoredPosition: {x: 1, y: -20.999992}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489395339
@@ -5514,7 +5514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FALSO
+  m_Text: VERDADEIRO
 --- !u!222 &1243513203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7044,7 +7044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1601039424
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7097,8 +7097,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " O Product Owner \xE9 uma pessoa, n\xE3o um comit\xEA, mas o Product Owner
-    pode representar os desejos de um comit\xEA no Product Backlog."
+  m_Text: "M\xFAltiplas equipes de Scrum trabalham frequentemente em conjunto no
+    mesmo produto. Um Product Backlog \xE9 utilizado para descrever o pr\xF3ximo
+    trabalho sobre ele.\r"
 --- !u!222 &1601039426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7668,7 +7669,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VERDADEIRO
+  m_Text: FALSO
 --- !u!222 &1819789560
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9791,7 +9792,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 23
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -9802,8 +9803,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC9 uma boa pr\xE1tica ter pelo menos dois Product Owners em grandes
-    projetos."
+  m_Text: Todas as equipes de Desenvolvimento que trabalham no mesmo produto devem
+    utilizar o mesmo Backlog.
 --- !u!222 &2073532153
 CanvasRenderer:
   m_ObjectHideFlags: 0

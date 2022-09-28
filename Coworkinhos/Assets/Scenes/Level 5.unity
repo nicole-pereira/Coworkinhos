@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " A lista de pend\xEAncias da Sprint"
+  m_Text: "O CEO da Organiza\xE7\xE3o"
 --- !u!222 &2054778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -272,8 +272,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O que fornece orienta\xE7\xE3o para a equipe de desenvolvimento sobre
-    o motivo da constru\xE7\xE3o da aplica\xE7\xE3o?"
+  m_Text: "O que poderia ser uma fonte de requisitos para quaisquer altera\xE7\xF5es
+    a serem feitas ao produto?\r"
 --- !u!222 &19605334
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2400,7 +2400,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '   O Scrum Master'
+  m_Text: Na Sprint Review
 --- !u!222 &93986365
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2445,8 +2445,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89.5, y: 10.1}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -0.0010624, y: 0.5488}
+  m_SizeDelta: {x: 260.97, y: 31.0975}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101155680
 MonoBehaviour:
@@ -3101,7 +3101,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' O objetivo da Sprint'
+  m_Text: "Um pequeno time de pessoas que \xE9 altamente flex\xEDvel e adapt\xE1vel"
 --- !u!222 &232335160
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3180,8 +3180,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O que fornece orienta\xE7\xE3o para a equipe de desenvolvimento sobre
-    o motivo da constru\xE7\xE3o da aplica\xE7\xE3o?"
+  m_Text: "Com que frequ\xEAncia o Time de Scrum deve inspecionar os itens do Scrum
+    e progredir em dire\xE7\xE3o ao Objetivo da Sprint?"
 --- !u!222 &274363969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3401,7 +3401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.0000238, y: -43}
+  m_AnchoredPosition: {x: 5, y: -15}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &339793761
@@ -3557,7 +3557,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_FontSize: 13
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -3568,8 +3568,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " O Product Owner \xE9 uma pessoa, n\xE3o um comit\xEA, mas o Product Owner
-    pode representar os desejos de um comit\xEA no Product Backlog."
+  m_Text: "Durante cada Retrospectiva, o Time Scrum planeja como aumentar a qualidade
+    do produto pelos processos de trabalho ou adaptando a defini\xE7\xE3o do que
+    foi \"Feito\" na Sprint, apenas se for apropriado e n\xE3o entrar em conflito
+    com as normas de produto."
 --- !u!222 &340187943
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4123,8 +4125,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O Sprint Goal \xE9 um objetivo definido para o Sprint que pode ser alcan\xE7ado
-    atrav\xE9s da implementa\xE7\xE3o do Product Backlog."
+  m_Text: "O Time deve inspecionar frequentemente os itens do Scrum e progredir para
+    um Objetivo para detectar desvios indesej\xE1veis. Isso n\xE3o deve ser t\xE3o
+    frequente ao ponto de interferir no trabalho."
 --- !u!222 &488243187
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4169,7 +4172,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.181}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 2}
+  m_AnchoredPosition: {x: 5, y: -59}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489395339
@@ -5100,8 +5103,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5000148, y: -45.899986}
-  m_SizeDelta: {x: 176.93, y: 37.4562}
+  m_AnchoredPosition: {x: 0.00056767, y: -77}
+  m_SizeDelta: {x: 170.97, y: 37.4562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &799039289
 MonoBehaviour:
@@ -5279,7 +5282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " A lista de pend\xEAncias da Sprint"
+  m_Text: O Scrum Master e o Product Owner
 --- !u!222 &818332308
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5322,7 +5325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -0.0000076293945}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845516291
@@ -5358,7 +5361,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' O objetivo da Sprint'
+  m_Text: O Product Backlog
 --- !u!222 &845516292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6630,8 +6633,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89.5, y: 10.1}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -0.0000066757, y: 35.2926}
+  m_SizeDelta: {x: 170.9752, y: 36.5851}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194558188
 MonoBehaviour:
@@ -6886,7 +6889,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '   O Scrum Master'
+  m_Text: O Time de Desenvolvimento
 --- !u!222 &1214918518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6965,7 +6968,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FALSO
+  m_Text: VERDADEIRO
 --- !u!222 &1243513203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7257,7 +7260,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 23
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -7268,8 +7271,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC9 uma boa pr\xE1tica ter pelo menos dois Product Owners em grandes
-    projetos."
+  m_Text: "A defini\xE7\xE3o do que foi feito numa Sprint pode ser revisada e adaptada
+    durante a Retrospectiva."
 --- !u!222 &1298117064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7583,7 +7586,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_FontSize: 13
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -7594,8 +7597,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O Sprint Goal \xE9 um objetivo definido para o Sprint que pode ser alcan\xE7ado
-    atrav\xE9s da implementa\xE7\xE3o do Product Backlog."
+  m_Text: "Uma equipe individual altamente flex\xEDvel e adapt\xE1vel, pois esses
+    pontos fortes continuam operando em variadas redes de equipes que colaboram e
+    interagem por meio de arquiteturas de desenvolvimento sofisticadas e ambientes
+    de lan\xE7amento."
 --- !u!222 &1427510786
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7794,7 +7799,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VERDADEIRO
+  m_Text: FALSO
 --- !u!222 &1473552846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7906,7 +7911,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '   O Scrum Master'
+  m_Text: O Time de Scrum
 --- !u!222 &1511800245
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8084,8 +8089,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5000148, y: -45.899986}
-  m_SizeDelta: {x: 176.93, y: 37.4562}
+  m_AnchoredPosition: {x: 0.00085582, y: -43}
+  m_SizeDelta: {x: 260.97, y: 33.0661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1538909125
 MonoBehaviour:
@@ -8423,8 +8428,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " O Product Owner \xE9 uma pessoa, n\xE3o um comit\xEA, mas o Product Owner
-    pode representar os desejos de um comit\xEA no Product Backlog."
+  m_Text: "A Equipe de Desenvolvimento pode convidar outras pessoas a participar
+    no Planejamento da Sprint, a fim de fornecer aconselhamento t\xE9cnico ou de
+    dom\xEDnio."
 --- !u!222 &1601039426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8548,8 +8554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O que fornece orienta\xE7\xE3o para a equipe de desenvolvimento sobre
-    o motivo da constru\xE7\xE3o da aplica\xE7\xE3o?"
+  m_Text: "Qual \xE9 a ess\xEAncia do Scrum? Selecione a op\xE7\xE3o mais adequada."
 --- !u!222 &1699592444
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8628,8 +8633,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O Sprint Goal \xE9 um objetivo definido para o Sprint que pode ser alcan\xE7ado
-    atrav\xE9s da implementa\xE7\xE3o do Product Backlog."
+  m_Text: "O Product Backlog \xE9 uma lista ordenada de tudo o que possa ser necess\xE1rio
+    no produto e \xE9 a \xFAnica fonte de requisitos para quaisquer altera\xE7\xF5es
+    a serem feitas ao produto."
 --- !u!222 &1711106664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8785,7 +8791,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VERDADEIRO
+  m_Text: FALSO
 --- !u!222 &1819789560
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8830,8 +8836,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87.500015, y: 10.100011}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 1.2197, y: -20}
+  m_SizeDelta: {x: 170.97, y: 49.1224}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827117963
 MonoBehaviour:
@@ -9484,7 +9490,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " A lista de pend\xEAncias da Sprint"
+  m_Text: "Ap\xF3s a Daily"
 --- !u!222 &1875986778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9563,7 +9569,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' O objetivo da Sprint'
+  m_Text: "Frequentemente, mas n\xE3o deve ficar no caminho do trabalho a ser feito."
 --- !u!222 &1893753544
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9756,7 +9762,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FALSO
+  m_Text: VERDADEIRO
 --- !u!222 &1933742556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10158,8 +10164,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87.500015, y: 10.100011}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -0.0000076294, y: -98}
+  m_SizeDelta: {x: 260.9717, y: 51.372}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018339214
 MonoBehaviour:
@@ -10325,8 +10331,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC9 uma boa pr\xE1tica ter pelo menos dois Product Owners em grandes
-    projetos."
+  m_Text: Pessoas de fora do Time Scrum podem participar do Planejamento da Sprint.
 --- !u!222 &2073532153
 CanvasRenderer:
   m_ObjectHideFlags: 0

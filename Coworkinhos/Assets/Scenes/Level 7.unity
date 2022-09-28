@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " A lista de pend\xEAncias da Sprint"
+  m_Text: O Product Backlog
 --- !u!222 &2054778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -272,8 +272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O que fornece orienta\xE7\xE3o para a equipe de desenvolvimento sobre
-    o motivo da constru\xE7\xE3o da aplica\xE7\xE3o?"
+  m_Text: "O que pertence apenas \xE0 Equipe de Desenvolvimento?"
 --- !u!222 &19605334
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1392,7 +1391,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 23
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -1403,8 +1402,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC9 uma boa pr\xE1tica ter pelo menos dois Product Owners em grandes
-    projetos."
+  m_Text: "O Scrum recomenda a utiliza\xE7\xE3o apenas dos componentes e regras Scrum
+    que mais se adequam a um determinado projeto."
 --- !u!222 &83202004
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1528,7 +1527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89.5, y: 10.1}
+  m_AnchoredPosition: {x: 0.000038147, y: -36}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &101155680
@@ -1673,7 +1672,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.181}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: 2}
+  m_AnchoredPosition: {x: -1.0000031, y: -14.999998}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106800872
@@ -2014,6 +2013,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192744972}
   m_CullTransparentMesh: 1
+--- !u!1 &204187414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 204187415}
+  - component: {fileID: 204187417}
+  - component: {fileID: 204187416}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &204187415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204187414}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1524105908}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &204187416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204187414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: O Cliente
+--- !u!222 &204187417
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204187414}
+  m_CullTransparentMesh: 1
 --- !u!1 &204689607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2217,8 +2295,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O que fornece orienta\xE7\xE3o para a equipe de desenvolvimento sobre
-    o motivo da constru\xE7\xE3o da aplica\xE7\xE3o?"
+  m_Text: "Quem \xE9 respons\xE1vel por gerenciar o Product Backlog?"
 --- !u!222 &274363969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2514,7 +2591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.0000238, y: -43}
+  m_AnchoredPosition: {x: -0, y: -60}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &332648914
@@ -2814,8 +2891,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " O Product Owner \xE9 uma pessoa, n\xE3o um comit\xEA, mas o Product Owner
-    pode representar os desejos de um comit\xEA no Product Backlog."
+  m_Text: "O Product Backlog \xE9 uma lista ordenada de tudo o que possa ser necess\xE1rio
+    no produto e \xE9 a \xFAnica fonte de requisitos para quaisquer altera\xE7\xF5es
+    a serem feitas ao produto."
 --- !u!222 &340187943
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3426,8 +3504,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O Sprint Goal \xE9 um objetivo definido para o Sprint que pode ser alcan\xE7ado
-    atrav\xE9s da implementa\xE7\xE3o do Product Backlog."
+  m_Text: "O Product Owner \xE9 a \xFAnica pessoa respons\xE1vel pela gest\xE3o do
+    Backlog do Produto."
 --- !u!222 &488243187
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4083,6 +4161,7 @@ RectTransform:
   - {fileID: 2073532151}
   - {fileID: 489395338}
   - {fileID: 339793760}
+  - {fileID: 1524105908}
   m_Father: {fileID: 1046494126}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4271,7 +4350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' O objetivo da Sprint'
+  m_Text: A Sprint Backlog
 --- !u!222 &845516292
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5522,7 +5601,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FALSO
+  m_Text: O Product Backlog
 --- !u!222 &1243513203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5814,10 +5893,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 19
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -5825,8 +5904,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC9 uma boa pr\xE1tica ter pelo menos dois Product Owners em grandes
-    projetos."
+  m_Text: O Planejamento da Sprint pode terminar se apenas o trabalho planejado para
+    os primeiros dias do Sprint for decomposto em unidades de um dia ou menos.
 --- !u!222 &1298117064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6216,7 +6295,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 15
+    m_FontSize: 11
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -6227,8 +6306,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O Sprint Goal \xE9 um objetivo definido para o Sprint que pode ser alcan\xE7ado
-    atrav\xE9s da implementa\xE7\xE3o do Product Backlog."
+  m_Text: "O Guia Scrum requer apenas que o trabalho planejado para os primeiros
+    dias da Sprint seja decomposto at\xE9 o fim dele, muitas vezes em unidades de
+    um dia ou menos, mas a Equipe de Desenvolvimento deve ser capaz de explicar ao
+    Product Owner e ao Scrum Master como pretende trabalhar sendo auto-organizada
+    para realizar o Objetivo da Sprint e criar o Incremento previsto."
 --- !u!222 &1427510786
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6465,7 +6547,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VERDADEIRO
+  m_Text: FALSO
 --- !u!222 &1473552846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6576,7 +6658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '   O Scrum Master'
+  m_Text: O Incremento
 --- !u!222 &1511800245
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6718,6 +6800,151 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519446656}
   m_CullTransparentMesh: 1
+--- !u!1 &1524105907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1524105908}
+  - component: {fileID: 1524105911}
+  - component: {fileID: 1524105910}
+  - component: {fileID: 1524105909}
+  m_Layer: 5
+  m_Name: Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1524105908
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524105907}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0015821978, w: 0.9999988}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 204187415}
+  m_Father: {fileID: 797920337}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.181}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2, y: -87}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1524105909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524105907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1524105910}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1048404416}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: Errou
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 797920336}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1048404416}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: Retorno
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1601039423}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1524105910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524105907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1524105911
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524105907}
+  m_CullTransparentMesh: 1
 --- !u!1 &1538909123
 GameObject:
   m_ObjectHideFlags: 0
@@ -6754,8 +6981,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5000148, y: -45.899986}
-  m_SizeDelta: {x: 176.93, y: 37.4562}
+  m_AnchoredPosition: {x: -1.3289, y: 10.6735}
+  m_SizeDelta: {x: 162.66, y: 36.3093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1538909125
 MonoBehaviour:
@@ -7093,8 +7320,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " O Product Owner \xE9 uma pessoa, n\xE3o um comit\xEA, mas o Product Owner
-    pode representar os desejos de um comit\xEA no Product Backlog."
+  m_Text: "Cada componente no \xE2mbito do Scrum serve um prop\xF3sito espec\xEDfico
+    e \xE9 essencial para o sucesso e utiliza\xE7\xE3o do Scrum."
 --- !u!222 &1601039426
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7275,8 +7502,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O Sprint Goal \xE9 um objetivo definido para o Sprint que pode ser alcan\xE7ado
-    atrav\xE9s da implementa\xE7\xE3o do Product Backlog."
+  m_Text: "Apenas a Equipe de Desenvolvimento pode alterar o seu Sprint Backlog durante
+    uma Sprint. Ele \xE9 a imagem em tempo real do trabalho que a equipe de Desenvolvimento
+    planeja realizar."
 --- !u!222 &1711106664
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7412,7 +7640,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VERDADEIRO
+  m_Text: "O CEO da Organiza\xE7\xE3o"
 --- !u!222 &1819789560
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9170,7 +9398,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: " A lista de pend\xEAncias da Sprint"
+  m_Text: O Time de Desenvolvimento
 --- !u!222 &1875986778
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9249,7 +9477,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ' O objetivo da Sprint'
+  m_Text: O Product Owner
 --- !u!222 &1893753544
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9442,7 +9670,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FALSO
+  m_Text: VERDADEIRO
 --- !u!222 &1933742556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9844,8 +10072,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -87.500015, y: 10.100011}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0.00094604, y: -81.3014}
+  m_SizeDelta: {x: 160, y: 31.1469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018339214
 MonoBehaviour:
@@ -10057,7 +10285,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 23
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -10068,8 +10296,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC9 uma boa pr\xE1tica ter pelo menos dois Product Owners em grandes
-    projetos."
+  m_Text: "O que poderia ser uma fonte de requisitos para quaisquer altera\xE7\xF5es
+    a serem feitas no produto?"
 --- !u!222 &2073532153
 CanvasRenderer:
   m_ObjectHideFlags: 0

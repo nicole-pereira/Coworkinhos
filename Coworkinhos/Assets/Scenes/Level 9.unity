@@ -6110,10 +6110,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 17
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -6121,8 +6121,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC9 uma boa pr\xE1tica ter pelo menos dois Product Owners em grandes
-    projetos."
+  m_Text: "A Daily deve demorar sempre exatamente 15 minutos. Por exemplo, se a sua
+    equipe conseguiu faz\xEA-la em 5 minutos, deve gastar mais 10 minutos em alguma
+    atividade \xFAtil da equipe como o refinamento do Product Backlog, mas n\xE3o
+    mais."
 --- !u!222 &1298117064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6466,8 +6468,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "O Sprint Goal \xE9 um objetivo definido para o Sprint que pode ser alcan\xE7ado
-    atrav\xE9s da implementa\xE7\xE3o do Product Backlog."
+  m_Text: "Todos os eventos no Scrum s\xE3o calendarizados e tem dura\xE7\xE3o m\xE1xima.
+    Mas, o Guia Scrum n\xE3o tem uma dura\xE7\xE3o m\xEDnima para qualquer evento
+    e as equipes podem fazer alguns mais rapidamente."
 --- !u!222 &1427510786
 CanvasRenderer:
   m_ObjectHideFlags: 0
