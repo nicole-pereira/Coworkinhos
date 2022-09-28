@@ -22,6 +22,10 @@ public class MoveAWSD : MonoBehaviour
 
     public GameObject setadorLvl;
 
+    public GameObject gc;
+
+    public int frutas;
+
     public string lvl;
     // Start is called before the first frame update
     void Start()
@@ -40,6 +44,10 @@ public class MoveAWSD : MonoBehaviour
         Movimento();
         Pulo();
         InteractPorta();
+        /*if (Input.GetKeyDown("k"))
+        {
+            Debug.Log(gc.GetComponent<GameController>().totalScore);  CASO EU QUEIRA FAZER PONTUACAO FIM DE JOGO
+        }*/
     }
 
     void Movimento()
@@ -114,12 +122,11 @@ public class MoveAWSD : MonoBehaviour
 
     void InteractPorta ()
     {
+        frutas = gc.GetComponent<GameController>().frutasVivas;
         
-        if (Input.GetKeyDown("s") && Vector3.Distance(perso1.position,porta1.position)<dist && Vector3.Distance(perso2.position,porta2.position)<dist )
+        if (Input.GetKeyDown("s") && Vector3.Distance(perso1.position,porta1.position)<dist && Vector3.Distance(perso2.position,porta2.position)<dist && frutas<=0 )
         {
-            Debug.Log("passar de nivel");
             setadorLvl.GetComponent<SetarLvl>().Setar();
-
             GameController.instance.RestartGame(lvl);
         }
     }

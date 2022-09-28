@@ -22,12 +22,15 @@ public class GameController : MonoBehaviour
     
     public int totalScore;
     public Text scoreText;
+    public int frutasVivas;
 
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1;
         instance = this;
+        frutasVivas = 5;
+        
     }
 
     void Update () {
@@ -64,6 +67,7 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         Destroy(fruta, 3f);
         Debug.Log("errou");
+        frutasVivas--;
     }
 
     public void Retorno(GameObject feedback)
@@ -80,6 +84,7 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         totalScore += Fruits.instance.Score;
         scoreText.text = totalScore.ToString();
+        frutasVivas--;
     }
 
     public void Pause()

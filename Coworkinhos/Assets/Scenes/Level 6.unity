@@ -3252,6 +3252,8 @@ MonoBehaviour:
   perso2: {fileID: 485788571}
   setadorLvl: {fileID: 387998269}
   lvl: Level 7
+  gc: {fileID: 1048404415}
+  frutas: 0
 --- !u!50 &485788569
 Rigidbody2D:
   serializedVersion: 4
@@ -4697,6 +4699,7 @@ MonoBehaviour:
   acertou: 0
   totalScore: 0
   scoreText: {fileID: 1132580548}
+  frutasVivas: 0
 --- !u!4 &1048404417
 Transform:
   m_ObjectHideFlags: 0
@@ -4875,6 +4878,8 @@ MonoBehaviour:
   perso1: {fileID: 1126940137}
   perso2: {fileID: 485788571}
   setadorLvl: {fileID: 387998269}
+  gc: {fileID: 1048404415}
+  frutas: 0
   lvl: Level 7
 --- !u!1 &1132580546
 GameObject:

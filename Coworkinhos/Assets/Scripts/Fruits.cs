@@ -14,10 +14,16 @@ public class Fruits : MonoBehaviour
 
     public int Score;
 
+    public int frutasSobrando;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
+        frutasSobrando = PlayerPrefs.GetInt("Sobrando", 5);
+        PlayerPrefs.SetInt("Sobrando",5);
         capsula = GetComponent<CapsuleCollider2D>();
         circulo = GetComponent<CircleCollider2D>();
     }
@@ -54,5 +60,11 @@ public class Fruits : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+    void OnDestroy(){
+        
+        PlayerPrefs.SetInt("Sobrando", (PlayerPrefs.GetInt("Sobrando")-1));
+        frutasSobrando = PlayerPrefs.GetInt("Sobrando");
+        Debug.Log("tem :"+frutasSobrando+"frutas sobrando");
     }
 }

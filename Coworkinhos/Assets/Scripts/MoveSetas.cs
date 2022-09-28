@@ -24,6 +24,10 @@ public class MoveSetas : MonoBehaviour
 
     public string lvl;
 
+    public GameObject gc;
+
+    public int frutas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -111,7 +115,9 @@ public class MoveSetas : MonoBehaviour
 
     void InteractPorta ()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow) && Vector3.Distance(perso1.position,porta1.position)<dist && Vector3.Distance(perso2.position,porta2.position)<dist )
+        frutas = gc.GetComponent<GameController>().frutasVivas;
+        
+        if (Input.GetKeyDown("s") && Vector3.Distance(perso1.position,porta1.position)<dist && Vector3.Distance(perso2.position,porta2.position)<dist && frutas<=0 )
         {
             setadorLvl.GetComponent<SetarLvl>().Setar();
             GameController.instance.RestartGame(lvl);
