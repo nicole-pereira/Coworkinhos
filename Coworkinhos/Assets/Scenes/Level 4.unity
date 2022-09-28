@@ -7044,7 +7044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1601039424
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7217,7 +7217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTxt: {fileID: 1971581656}
-  tempoInicial: 180
+  tempoInicial: 100
 --- !u!4 &1663063033
 Transform:
   m_ObjectHideFlags: 0

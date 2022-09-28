@@ -7275,7 +7275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeTxt: {fileID: 1971581656}
-  tempoInicial: 180
+  tempoInicial: 90
 --- !u!4 &1663063033
 Transform:
   m_ObjectHideFlags: 0
